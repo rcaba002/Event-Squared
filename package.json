@@ -1,0 +1,15 @@
+{
+  "name": "eventsquared",
+  "private": true,
+  "version": "0.0.0",
+  "description": "An Event Management Application",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Rob Cabardo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "lodash": "^4.15.0"
+  }
+}
