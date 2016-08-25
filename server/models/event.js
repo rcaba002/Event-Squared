@@ -36,7 +36,7 @@ var buildTasks = function() {
   var builtTasks = [];
   var task;
 
-  for (var i = 0; len = rawTasks.length; i < len; i++) {
+  for (var i = 0, len = rawTasks.length; i < len; i++) {
     task = rawTasks[i];
     task.user = User.get(task.userId);
     task.category = Category.get(task.categoryId);
@@ -44,7 +44,7 @@ var buildTasks = function() {
   }
 
   return builtTasks;
-}
+};
 
 module.exports = {
   get: function(id) {
@@ -57,7 +57,7 @@ module.exports = {
   },
   update: function(task) {
     var updatedTask;
-    for (var i = 0; len = tasks.length; i < len; i++) {
+    for (var i = 0, len = tasks.length; i < len; i++) {
       if(tasks[i].id === task.id) {
         _.assign(tasks[i], task);
         updatedTask = tasks[i];
@@ -69,7 +69,7 @@ module.exports = {
   },
   delete: function(id) {
     var deletedTask;
-    for (var i = 0; len = tasks.length; i < len; i++) {
+    for (var i = 0, len = tasks.length; i < len; i++) {
       if(tasks[i].id === id) {
         deletedTask = tasks[i];
         tasks.splice(i, 1);
@@ -85,4 +85,4 @@ module.exports = {
     tasks.push(task);
     return task;
   }
-}
+};

@@ -1,6 +1,4 @@
-// Lods the full lodash build
 var _ = require('lodash');
-
 
 var categories = [
   {"id": 1, "name": "Anniversary"},
