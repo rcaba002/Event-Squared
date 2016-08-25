@@ -1,1 +1,8 @@
-<h1>Events Show</h1>
+<div class="page-header">
+  <h1>{{event.title}}</h1>
+  <small>Created by: {{event.user.name}}</small>
+</div>
+<p>{{event.content}}</p>
+<p>Category: <span class="label label-info">{{event.category.name}}</span></p>
+<a class="btn btn-default">Edit Event</a>
+<a href="" class="btn btn-danger">Delete</a>

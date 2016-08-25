@@ -1,1 +1,7 @@
 <h1>Events Index</h1>
+<div class="row">
+  <div ng-repeat="event in events" class="col-sm-6">
+    <h2><a ng-href="#/events/{{event.id}}">{{event.title}}</a></h2>
+    <p>{{event.location}}</p>
+  </div>
+</div>

@@ -27,9 +27,17 @@ var tasks = [
     "location": "Horizon Cafe, St. Louis",
     "content": "Join us to meet others like you! Free drinks!"
   },
+  {
+    "id": 4,
+    "userId": 1,
+    "categoryId": 12,
+    "title": "SA&E Summit",
+    "location": "Daugherty Business Solutions",
+    "content": "Please attend the seminars offered throughout the day."
+  },
 ]
 
-var lastId = 3;
+var lastId = 4;
 
 var buildTasks = function() {
   var rawTasks = JSON.parse(JSON.stringify(tasks));
