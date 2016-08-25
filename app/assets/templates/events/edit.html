@@ -1,1 +1,19 @@
-<h1>Events Edit</h1>
+<h1>Edit: {{event.title}}</h1>
+<form>
+  <fieldset class="form-group">
+    <label for="title">Title</label>
+    <input class="form-control" type="text" id="title" name="title" ng-model="event.title">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="location">Location</label>
+    <input class="form-control" type="text" id="location" name="location" ng-model="event.location">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="content">Description</label>
+    <textarea class="form-control" type="text" id="content" name="content" ng-model="event.content"></textarea>
+  </fieldset>
+
+  <input type"submit" class="btn btn-default" value="Submit" ng-click="saveEvent(event)" ng-disabled="isSubmitting">
+</form>
