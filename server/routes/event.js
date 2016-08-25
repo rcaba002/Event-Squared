@@ -11,7 +11,7 @@ module.exports = function(app) {
   });
 
   app.delete('/events/:id', function(req, res) {
-    res.json(Task.delete(parseInt(req.param.id, 10) || {}));
+    res.json(Task.delete(parseInt(req.params.id, 10) || {}));
   });
 
   app.post('/events', function(req, res) {
