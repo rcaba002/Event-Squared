@@ -9,13 +9,10 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <div class="navbar-brand">
-            <a href="/#/">Event Sqaured</a>
+            <a href="/#/">Event Squared</a>
           </div>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#/events">Events</a></li>
-          <li><a href="#/users">Users</a></li>
-        </ul>
+        <es-page-nav></es-page-nav>
       </div>
     </nav>
     <div ng-view class="container-fluid"></div>
@@ -32,6 +29,7 @@
   <script src="assets/javascript/routes.js"></script>
 
   <!-- Directives -->
+  <script src="assets/javascript/directives/esPageNav.js"></script>
 
   <!-- Controllers -->
   <script src="assets/javascript/controllers/eventIndexController.js"></script>
