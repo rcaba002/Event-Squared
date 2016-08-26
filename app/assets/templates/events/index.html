@@ -2,8 +2,9 @@
 <div class="form-group">
   Search: <input type="text" ng-model="search.input.$">
 </div>
+<es-category-selector ng-model="search.category"></es-category-selector>
 <div class="row">
-  <div ng-repeat="event in events | filter:search.input" class="col-sm-6">
+  <div ng-repeat="event in events | categoryFilter:search.category | filter:search.input" class="col-sm-6">
     <h2><a title="{{event.user.name}}" ng-href="#/events/{{event.id}}">{{event.title}}</a></h2>
     <p>{{event.location}}</p>
     <p><span class="label label-info">{{event.category.name}}</span></p>
