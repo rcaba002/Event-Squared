@@ -5,28 +5,28 @@ var users = [
     "id": 1,
     "name": "John Doe",
     "username": "jdoe123",
-    "emailaddress": "jdoe@example.com",
+    "emailaddress": "brad@bradly.com",
     "phone": "314-555-1234",
   },
   {
     "id": 2,
     "name": "Jane Smith",
     "username": "jsmith456",
-    "emailaddress": "jsmith@example.com",
+    "emailaddress": "me@rachelhigley.com",
     "phone": "314-555-5678",
   },
   {
     "id": 3,
     "name": "Ron Johnson",
     "username": "rjohnson789",
-    "emailaddress": "rjohnson@example.com",
+    "emailaddress": "gregg@codeschool.com",
     "phone": "314-555-9012",
   },
   {
     "id": 4,
     "name": "Bob Tabor",
     "username": "btabor012",
-    "emailaddress": "btabor@example.com",
+    "emailaddress": "adamrensel@codeschool.com",
     "phone": "314-555-3456",
   }
 ]
