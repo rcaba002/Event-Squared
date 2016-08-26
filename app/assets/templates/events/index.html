@@ -1,6 +1,9 @@
 <h1>Events <a class="btn btn-default" href="#/events/new">New Event</a></h1>
+<div class="form-group">
+  Search: <input type="text" ng-model="search.input.$">
+</div>
 <div class="row">
-  <div ng-repeat="event in events" class="col-sm-6">
+  <div ng-repeat="event in events | filter:search.input" class="col-sm-6">
     <h2><a ng-href="#/events/{{event.id}}">{{event.title}}</a></h2>
     <p>{{event.location}}</p>
     <p><span class="label label-info">{{event.category.name}}</span></p>
