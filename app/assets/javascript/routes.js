@@ -23,4 +23,14 @@ angular.module('EventSquared').config(function($routeProvider){
       templateUrl: "assets/templates/events/edit.html",
       controller: "eventEditController"
     })
+
+    .when('/users', {
+      templateUrl: "assets/templates/users/index.html",
+      controller: "userIndexController"
+    })
+
+    .when('/users/:id', {
+      templateUrl: "assets/templates/users/show.html",
+      controller: "userShowController"
+    })
 });

@@ -5,7 +5,19 @@
     <link rel="stylesheet" href="assets/styles/bootstrap-theme.css"></link>
   </head>
   <body>
-    <h1>Event Squared</h1>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="/#/">Event Sqaured</a>
+          </div>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#/events">Events</a></li>
+          <li><a href="#/users">Users</a></li>
+        </ul>
+      </div>
+    </nav>
     <div ng-view class="container-fluid"></div>
   </body>
 
@@ -20,13 +32,16 @@
   <script src="assets/javascript/routes.js"></script>
 
   <!-- Directives -->
-  
+
   <!-- Controllers -->
   <script src="assets/javascript/controllers/eventIndexController.js"></script>
   <script src="assets/javascript/controllers/eventCreateController.js"></script>
   <script src="assets/javascript/controllers/eventEditController.js"></script>
   <script src="assets/javascript/controllers/eventShowController.js"></script>
+  <script src="assets/javascript/controllers/userIndexController.js"></script>
+  <script src="assets/javascript/controllers/userShowController.js"></script>
 
   <!-- Services -->
   <script src="assets/javascript/services/event.js"></script>
+  <script src="assets/javascript/services/user.js"></script>
 </html>

@@ -21,6 +21,13 @@ var users = [
     "username": "rjohnson789",
     "emailaddress": "rjohnson@example.com",
     "phone": "314-555-9012",
+  },
+  {
+    "id": 4,
+    "name": "Bob Tabor",
+    "username": "btabor012",
+    "emailaddress": "btabor@example.com",
+    "phone": "314-555-3456",
   }
 ]
 
