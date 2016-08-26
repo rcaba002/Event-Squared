@@ -1,6 +1,7 @@
-angular.module('EventSquared').controller('eventEditController', function(Event, $scope, $routeParams, $location) {
+angular.module('EventSquared').controller('eventEditController', function($scope, Event, Category, $routeParams, $location) {
   $scope.event = Event.get({id: $routeParams.id});
   $scope.isSubmitting = false;
+  $scope.categories = Category.query();
 
   $scope.saveEvent = function(event) {
     $scope.isSubmitting = true;
