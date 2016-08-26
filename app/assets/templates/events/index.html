@@ -4,7 +4,7 @@
 </div>
 <div class="row">
   <div ng-repeat="event in events | filter:search.input" class="col-sm-6">
-    <h2><a ng-href="#/events/{{event.id}}">{{event.title}}</a></h2>
+    <h2><a title="{{event.user.name}}" ng-href="#/events/{{event.id}}">{{event.title}}</a></h2>
     <p>{{event.location}}</p>
     <p><span class="label label-info">{{event.category.name}}</span></p>
   </div>
