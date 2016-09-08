@@ -33,4 +33,14 @@ angular.module('EventSquared').config(function($routeProvider){
       templateUrl: "assets/templates/users/show.html",
       controller: "userShowController"
     })
+
+    .when('/events/:eventId/squares', {
+      templateUrl: "assets/templates/squares/index.html",
+      controller: "squareIndexController"
+    })
+
+    .when('/events/:eventId/squares/:id', {
+      templateUrl: "assets/templates/squares/show.html",
+      controller: "squareShowController"
+    })
 });
